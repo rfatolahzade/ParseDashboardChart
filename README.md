@@ -1,17 +1,9 @@
 # ParseDashboardChart
-```bash
- docker-compose up
- ```
- ```bash
-mkdir dashboard
-cd dashboard
-cp ../docker-compose.yaml .
-kompose convert
-rm docker-compose.yaml
-```
 
 Kube time:
 ```bash
+git clone https://github.com/rfinland/ParseDashboardChart.git
+cd charts/parse-dashboard
 kubectl apply -f .
 ```
 
