@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: /snap/kompose/19/kompose-linux-amd64 convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: parse-dashboard
+  name: parse-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: parse-dashboard
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: /snap/kompose/19/kompose-linux-amd64 convert
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: parse-dashboard
+    spec:
+      containers:
+      - env:
+        - name: PARSE_DASHBOARD_ALLOW_INSECURE_HTTP
+          value: "true"
+        - name: PARSE_DASHBOARD_APP_ID
+          value: MyParseApp
+        - name: PARSE_DASHBOARD_MASTER_KEY
+          value: adminadmin
+        - name: PARSE_DASHBOARD_SERVER_URL
+          value: http://localhost:1337/parse
+        - name: PARSE_DASHBOARD_USER_ID
+          value: admin
+        - name: PARSE_DASHBOARD_USER_PASSWORD
+          value: admin
+        image: parseplatform/parse-dashboard
+        imagePullPolicy: ""
+        name: parse-dashboard-1
+        ports:
+        - containerPort: 4040
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}
