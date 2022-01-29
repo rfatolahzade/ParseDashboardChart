@@ -29,3 +29,10 @@ visit:
 ```bash
 https://rfinland.github.io/ParseDashboardChart/index.html
 ```
+
+helming!
+
+```bash
+helm repo add parse-dashboard https://rfinland.github.io/ParseDashboardChart
+helm install parse-dashboard parse-dashboard/parse-dashboard 
+```
