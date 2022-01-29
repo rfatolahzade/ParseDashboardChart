@@ -1,12 +1,6 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    kompose.cmd: /snap/kompose/19/kompose-linux-amd64 convert
-    kompose.version: 1.21.0 (992df58d8)
-  creationTimestamp: null
-  labels:
-    io.kompose.service: parse-dashboard
   name: parse-dashboard
 spec:
   ports:
@@ -14,6 +8,4 @@ spec:
     port: 4040
     targetPort: 4040
   selector:
-    io.kompose.service: parse-dashboard
-status:
-  loadBalancer: {}
+      parse-dashboard.service: parse-dashboard
