@@ -1,4 +1,4 @@
-# DashboardParse
+# ParseDashboardChart
 ```bash
  docker-compose up
  ```
@@ -27,5 +27,5 @@ git push origin gh-pages
 ```
 visit:
 ```bash
-https://rfinland.github.io/DashboardParse/index.html
+https://rfinland.github.io/ParseDashboardChart/index.html
 ```
