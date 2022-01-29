@@ -24,6 +24,16 @@ entries:
   parse-dashboard:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-01-29T09:44:23.528445053Z"
+    description: parse-dashboard
+    digest: 1165a0783140132a497cbed0a6411e2d631772fe39bbac38c36fc2e60b8d1797
+    name: parse-dashboard
+    type: application
+    urls:
+    - https://github.com/rfinland/ParseDashboardChart/releases/download/parse-dashboard-0.1.5/parse-dashboard-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-01-29T09:31:14.940097428Z"
     description: parse-dashboard
     digest: 03ae256984613e1415fda2781dc0bb1f9380954d912b4a1820be3db4e192be43
