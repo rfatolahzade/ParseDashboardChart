@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  dashboard:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-01-29T08:43:59.951519436Z"
+    description: dashboard
+    digest: e9a5876e031b99504077a3af1038d544d04a60b8296ad016e39ae643761834cb
+    name: dashboard
+    type: application
+    urls:
+    - https://github.com/rfinland/DashboardParse/releases/download/dashboard-0.1.1/dashboard-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-01-29T08:43:59.650712911Z"
