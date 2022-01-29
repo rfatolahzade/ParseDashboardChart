@@ -28,17 +28,17 @@ spec:
         - name: PARSE_DASHBOARD_ALLOW_INSECURE_HTTP
           value: "true"
         - name: PARSE_DASHBOARD_APP_ID
-          value: MyParseApp
+          value: {{ .Values.appId | quote }}
         - name: PARSE_DASHBOARD_MASTER_KEY
-          value: adminadmin
+          value: {{ .Values.masterkey | quote }}
         - name: PARSE_DASHBOARD_SERVER_URL
           value: http://localhost:1337/parse
         - name: PARSE_DASHBOARD_USER_ID
-          value: admin
+          value: {{ .Values.username | quote }}
         - name: PARSE_DASHBOARD_USER_PASSWORD
-          value: admin
+          value: {{ .Values.password | quote }}
         image: parseplatform/parse-dashboard
-        imagePullPolicy: ""
+        imagePullPolicy: IfNotPresent
         name: parse-dashboard-1
         ports:
         - containerPort: 4040
