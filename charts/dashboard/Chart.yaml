@@ -1,0 +1,6 @@
+apiVersion: v2
+name: dashboard
+description: dashboard 
+type: application
+version: 0.1.1
+appVersion: "1"
