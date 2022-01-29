@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+    parse-dashboard:
+        container_name: parse-dashboard-1
+        environment:
+            - PARSE_DASHBOARD_APP_ID=MyParseApp
+            - PARSE_DASHBOARD_MASTER_KEY=adminadmin
+            - PARSE_DASHBOARD_USER_ID=admin
+            - PARSE_DASHBOARD_USER_PASSWORD=admin
+            - PARSE_DASHBOARD_ALLOW_INSECURE_HTTP=true
+            - 'PARSE_DASHBOARD_SERVER_URL=http://localhost:1337/parse'
+        ports:
+            - '4040:4040'
+        image: parseplatform/parse-dashboard
