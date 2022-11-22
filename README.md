@@ -2,7 +2,7 @@
 
 Kube time:
 ```bash
-git clone https://github.com/rfinland/ParseDashboardChart.git
+git clone https://github.com/rfatolahzade/ParseDashboardChart.git
 cd charts/parse-dashboard
 kubectl apply -f .
 ```
@@ -19,12 +19,12 @@ git push origin gh-pages
 ```
 visit:
 ```bash
-https://rfinland.github.io/ParseDashboardChart/index.html
+https://rfatolahzade.github.io/ParseDashboardChart/index.html
 ```
 
 helming!
 
 ```bash
-helm repo add parse-dashboard https://rfinland.github.io/ParseDashboardChart
+helm repo add parse-dashboard https://rfatolahzade.github.io/ParseDashboardChart
 helm install parse-dashboard parse-dashboard/parse-dashboard 
 ```
